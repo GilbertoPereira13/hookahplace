@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hookah Place</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+	<script type="text/javascript" src="js/instafeed.min.js"></script>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+</head>
+<body>
+    <!-- WhatsApp -->
+    <a href="#apidoWpp" target="_blank" class="wpp-contact">
+        <div class="badge">1</div>
+        <img src="img/ativo-2.png">
+        <div class="text">Peça Via WhatsApp</div>
+    </a>
+
+    <nav class="fixed-menu">
+
+        <div class="container">
+            <div class="logo-menu">
+                <img src="img/narguilelogo2branco.png" width="180px" height="80px" alt="">
+            </div>
+            <div class="nav-menu">
+                <ul class="menu-list">
+                    <li class="menu-item"><a href="#home">Home</a></li>
+                    <li class="menu-item"><a href="#produtos">Produtos</a></li>
+                    <li class="menu-item"><a href="#ambiente">Ambiente</a></li>
+                    <li class="menu-item"><a href="#localizacao">Localização</a></li>
+                </ul>
+            </div>
+        </div>
+        
+    </nav>
+    
+    <header class="header" id="home">
+
+        <div class="float-card-home">
+            <div class="float-card-content">
+                <h1 class="card-title">Hookah Place</h1>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa minima natus nobis itaque veniam laboriosam laudantium minus iusto dignissimos nostrum, aut ea explicabo, placeat voluptate dolorum voluptatem perspiciatis, repellendus eaque!    </p>
+            </div>
+        </div>
+ 
+    </header>
+
+    <main class="main">
+        <section class="secao1" id="produtos">
+
+            <div class="float-card-produtos">
+                <div class="float-card-content">
+                    <h1 class="card-title">Produtos</h1>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa minima natus nobis itaque veniam laboriosam laudantium minus iusto dignissimos nostrum, aut ea explicabo, placeat voluptate dolorum voluptatem perspiciatis, repellendus eaque!    </p>
+                </div>
+            </div>
+            
+        </section>
+        <section class="secao2" id="ambiente">
+
+            <div class="float-card-ambiente">
+                <div class="float-card-content">
+                    <h1 class="card-title">Ambiente</h1>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa minima natus nobis itaque veniam laboriosam laudantium minus iusto dignissimos nostrum, aut ea explicabo, placeat voluptate dolorum voluptatem perspiciatis, repellendus eaque!    </p>
+                </div>
+            </div>
+            
+            <div class="insta-feed">
+                <div id="instafeed" class="owl-carousel owl-theme owl-loaded owl-drag"></div>
+
+            </div>
+
+        </section>
+        <section class="secao3" id="localizacao">
+
+            <div class="localizacao-card">
+                <h1 class="localizacao-title">Localização</h1>
+                <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" style='border-radius: 10px; filter: brightness(85%);'src="https://maps.google.com/maps?width=100%25&amp;height=45vh&amp;hl=en&amp;q=S%C3%A3o%20Paulo%20Tabacaria+(My%20Business%20Name)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src='js/script.js'></script>
+    <script type="text/javascript">
+		var feed = new Instafeed({
+			accessToken: 'IGQVJWUzlIb2VZAaG44S2xTZAnBiUW5RaHVwUU9QcFpuTmtTdG9FVUVYX3NTQUI1MWV3MEk2NzFydGI0NmtnVWQ0NDNhR2s5MGFITTI2MWxZANjNHTlZAQRnBHRmp3M3ZAvUVdsSzFpcE95STJZAaVZANdERGWQZDZD',
+			limit: 8,
+			template:'<div class="item"><a href="{{link}}" target="_blank"><img title="{{caption}}" src="{{image}}" /></a></div>',
+
+			after: function(){
+
+				$('.owl-carousel').owlCarousel({
+					loop:true,
+					margin:10,
+					nav:false,
+					responsiveClass:true,
+					responsive:{
+						0:{
+							items:1
+							
+						},
+						600:{
+							items:3
+							
+						},
+						1000:{
+							items:5,							
+							loop:false
+						}
+					}
+				});
+			}
+		});
+
+
+		feed.run();
+
+	</script>
+</body>
+</html>

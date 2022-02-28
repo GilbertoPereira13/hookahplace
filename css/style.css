@@ -1,0 +1,398 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Montserrat';
+}
+html{
+    scroll-behavior: smooth;
+
+}
+body{
+    width: calc(100vw - 1.1%);
+}
+/* WhatsApp contact */
+.wpp-contact{
+    position: fixed;
+    bottom: 25px;
+    right: 15px;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.wpp-contact .badge{
+    position: absolute;
+    top: 0.7rem;
+    left: 2.5rem;
+    z-index: 10;
+    background-color: rgb(173, 2, 2);
+    width: 25px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: 800;
+}
+
+.wpp-contact img{
+    width: 70px;
+    margin-top: 15px;
+    z-index: 0;
+    filter: drop-shadow(0px 10px 10px rgba(0,0,0,0.2));
+}
+
+.badge{
+    max-width: 10px;
+    padding: 2px 6px;
+    font-size: 11px;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+.wpp-contact .text{
+    background-color: #52cf72;
+    color: #fff;
+    padding: 8px 15px 10px 22px;
+    margin-left: -25px;
+    border-radius: 10px;
+}
+.container{
+    width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.header{
+    width: calc(100vw - 1.1%);
+    height: 900px;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url(../img/4.jpg) center no-repeat;
+    background-size: cover;
+    position: relative;
+
+}
+.fixed-menu{
+    width: calc(100vw - 1.1%);
+    height: auto;
+    padding: 15px 0 5px 0;
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 990;
+    backdrop-filter: blur(4px);
+    background-color: rgba(0, 0, 0, 0.089);
+}
+.nav-menu{
+    display: flex;
+    align-items: center;
+}
+.logo-menu{
+    margin-top: 2vh;
+}
+.menu-list{
+    display: flex;
+    list-style: none;
+    color: white;
+    margin-top: 7vh;
+}
+.menu-item a{
+    margin: 0 10px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: white;
+}
+.menu-item a:hover{
+    text-decoration: underline;
+    text-decoration-color: rgba(229,34,39,1);
+    cursor: pointer;
+}
+.main{
+    width: calc(100vw - 1.1%);
+    height: auto;
+    
+}
+.secao1{
+    width: calc(100vw - 1.1%);
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url(../img/1.jpg) center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.secao2{
+    width: calc(100vw - 1.1%);
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/2.jpg) center no-repeat;
+    background-size: cover;
+    position: relative;
+
+}
+.secao3{
+    width: calc(100vw - 1.1%);
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url(../img/3.jpg)center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.localizacao-card{
+    position: absolute;
+    top: 28vh;
+    left: 5vw;
+    width: 48vw;
+    height: 50vh;
+    text-align: center;
+}
+.localizacao-title{
+    color: white;
+    margin-bottom: 2vh;
+    font-size: 2.1rem;
+}
+.float-card-home{
+    position: absolute;
+    top: 25vh;
+    left: 10vw;
+    color: white;
+    width: 30vw;
+    height: auto;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.397);
+}
+.float-card-produtos{
+    position: absolute;
+    top: 30vh;
+    left: 10vw;
+    color: white;
+    width: 30vw;
+    height: auto;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.397);
+}
+.float-card-ambiente{
+    position: absolute;
+    top: 30vh;
+    left: 8vw;
+    color: white;
+    width: 30vw;
+    height: auto;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.397);
+}
+.float-card-content{
+    margin: 5% auto;
+}
+.card-title{
+    margin-bottom: 15px;
+}
+.card-text{
+    text-align: justify;
+    padding: 0 20px;
+}
+
+.scroll-animation{
+    animation: go-back 1s;
+}
+
+@keyframes go-back {
+    from {
+      transform: translateX(-25vw);
+    }
+    to {
+      transform: translateX(0);
+    }
+  } 
+  
+  /* Insta Feed */
+.insta-feed{
+    position: absolute;
+    top: 65vh;
+    right: 14vw;
+    width: 70vw;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.297);
+    filter: brightness(80%);
+}
+
+  .owl-carousel {
+	width: 50%;
+}
+
+#instafeed {
+	display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+/* Media Query */
+
+@media screen and (max-width: 680px) {
+    /* WhatsApp Mobile */
+    .wpp-contact{
+        right: 5px;
+        bottom: 5px;
+    }
+    .wpp-contact .text{
+        display: none;
+    }
+    .wpp-contact img {
+        width: 90px;
+    }
+    .wpp-contact .badge {
+        top: 0.7rem;
+        left: 3.6rem;
+    }
+
+    /*Fixed Menu Mobile*/
+    .fixed-menu{
+        padding: 8px 0 5px 0;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .logo-menu{
+        margin-top: 0vh;
+        display: flex;
+        justify-content: center;
+    }
+    .nav-menu{
+        justify-content: center;
+    }
+    .menu-list{
+        margin-top: 2vh;
+    }
+    
+    /* Fixed Cards Mobile*/
+    .float-card-home{
+        width: 45vw;
+        height: auto;
+        text-align: center;
+        top: 25vh;
+        left: 5vw;
+    }
+    .float-card-produtos{
+        width: 45vw;
+        height: auto;
+        text-align: center;
+        top: 25vh;
+        left: 5vw;
+    }
+    .float-card-ambiente{
+        width: 45vw;
+        height: auto;
+        text-align: center;
+        top: 20vh;
+        left: 5vw;
+    }
+
+    /*InstaFeed Mobile*/ 
+    #instafeed{
+        height: 35vh;
+    }
+    .insta-feed{
+        top: 59vh;
+        right: 18vw;
+        backdrop-filter: blur(5px);
+    }
+
+    /*Maps api mobile*/
+    .localizacao-card {
+        top: 25vh;
+        width: 88vw;
+    }    
+
+    /*Background images - mobile*/
+    .header{
+        height: 100vh;
+        background-position-x: -60vw;
+    }
+    .secao1{
+        background-position-x: -45vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    /* WhatsApp Mobile */
+    .wpp-contact{
+        right: 5px;
+        bottom: 5px;
+    }
+    .wpp-contact .text{
+        display: none;
+    }
+    .wpp-contact img {
+        width: 90px;
+    }
+    .wpp-contact .badge {
+        top: 0.7rem;
+        left: 3.6rem;
+    }
+
+    /*Fixed Menu Mobile*/
+    .fixed-menu{
+        padding: 8px 0 5px 0;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .logo-menu{
+        margin-top: 0vh;
+        display: flex;
+        justify-content: center;
+    }
+    .nav-menu{
+        justify-content: center;
+    }
+    .menu-list{
+        margin-top: 2vh;
+    }
+    
+    /* Fixed Cards Mobile*/
+    .float-card-home{
+        width: 45vw;
+        height: auto;
+        text-align: center;
+        top: 25vh;
+        left: 5vw;
+    }
+    .float-card-produtos{
+        width: 45vw;
+        height: auto;
+        text-align: center;
+        top: 25vh;
+        left: 5vw;
+    }
+    .float-card-ambiente{
+        width: 45vw;
+        height: auto;
+        text-align: center;
+        top: 20vh;
+        left: 5vw;
+    }
+
+    /*InstaFeed Mobile*/ 
+    #instafeed{
+        height: 35vh;
+    }
+    .insta-feed{
+        top: 59vh;
+        right: 18vw;
+        backdrop-filter: blur(5px);
+    }
+
+    /*Maps api mobile*/
+    .localizacao-card {
+        top: 25vh;
+        width: 88vw;
+    }    
+
+    /*Background images - mobile*/
+    .header{
+        height: 100vh;
+        background-position-x: -81vw;
+    }
+    .secao1{
+        background-position-x: -75vw;
+    }
+}
